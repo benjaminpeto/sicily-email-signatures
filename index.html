@@ -182,10 +182,10 @@
 
             return `
                 <tr>
-                    <td style="padding:${topPadding}px 11px 0 0; vertical-align:top; width:${iconSize + 11}px;">
+                    <td style="padding:${topPadding}px 11px 0 0; vertical-align:middle; width:${iconSize + 11}px;">
                         <img src="${iconSrc}" alt="" width="${iconSize}" style="display:block; width:${iconSize}px; min-width:${iconSize}px; height:auto; border:0;">
                     </td>
-                    <td style="padding:${topPadding}px 0 0; vertical-align:top; color:${palette.lightText}; font-family:'Avenir Next', Avenir, 'Trebuchet MS', Arial, sans-serif; font-size:${fontSize}px; line-height:${lineHeight}px; font-weight:500; letter-spacing:0;">
+                    <td style="padding:${topPadding}px 0 0; vertical-align:middle; color:${palette.lightText}; font-family:'Avenir Next', Avenir, 'Trebuchet MS', Arial, sans-serif; font-size:${fontSize}px; line-height:${lineHeight}px; font-weight:500; letter-spacing:0;">
                         ${contentHtml}
                     </td>
                 </tr>
@@ -261,7 +261,7 @@
                 fontSize: signature.phones.length > 1 ? 13 : 14,
                 lineHeight: signature.phones.length > 1 ? 16 : 17,
                 iconSize: 18,
-                topPadding: 2
+                topPadding: 6
             })}
                                 ${renderDetailRow(
                 assets.mail,
