@@ -82,7 +82,7 @@
             {
                 cardTitle: "Accounts + Billing",
                 cardSubtitle: "Shared inbox",
-                displayName: "ACCOUNTS + BILLING",
+                displayName: "ACCOUNTS & BILLING INQUIRIES",
                 subtitle: "",
                 phones: [shared.phone],
                 email: ["accounts@eatatsicily.com", "mailto:accounts@eatatsicily.com"],
@@ -183,7 +183,7 @@
             return `
                 <tr>
                     <td style="padding:${topPadding}px 11px 0 0; vertical-align:top; width:${iconSize + 11}px;">
-                        <img src="${iconSrc}" alt="" width="${iconSize}" height="${iconSize}" style="display:block; width:${iconSize}px; height:${iconSize}px; border:0;">
+                        <img src="${iconSrc}" alt="" width="${iconSize}" style="display:block; width:${iconSize}px; min-width:${iconSize}px; height:auto; border:0;">
                     </td>
                     <td style="padding:${topPadding}px 0 0; vertical-align:top; color:${palette.lightText}; font-family:'Avenir Next', Avenir, 'Trebuchet MS', Arial, sans-serif; font-size:${fontSize}px; line-height:${lineHeight}px; font-weight:500; letter-spacing:0;">
                         ${contentHtml}
@@ -199,7 +199,7 @@
                         ${shared.social.map(([href, src, alt], index) => `
                             <td style="padding:0 ${index < shared.social.length - 1 ? 10 : 0}px 0 0;">
                                 <a href="${href}" style="text-decoration:none;">
-                                    <img src="${src}" alt="${alt}" width="42" height="42" style="display:block; width:42px; height:42px; border:0;">
+                                    <img src="${src}" alt="${alt}" width="42" style="display:block; width:42px; height:auto; border:0;">
                                 </a>
                             </td>
                         `).join("")}
